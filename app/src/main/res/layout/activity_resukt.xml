@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/img"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@id/img"
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Information"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/expiredate"
+        android:text="Expiry Date:"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/x"/>
+    <TextView
+        android:id="@+id/expiredate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Expiry Date"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/x"/>
+    <TextView
+        android:id="@+id/product_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Product Information"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/expiredate"/>
+    <TextView
+        android:id="@+id/man_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Manufacture Information"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/product_inf"/>
+    <TextView
+        android:id="@+id/con_inf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Contents Information"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/man_inf"/>
+</RelativeLayout>
