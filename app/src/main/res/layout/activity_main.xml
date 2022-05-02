@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="Andriod BarCode Scanner"
             android:textColor="@color/black"
-            android:textSize="25dp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <ImageView

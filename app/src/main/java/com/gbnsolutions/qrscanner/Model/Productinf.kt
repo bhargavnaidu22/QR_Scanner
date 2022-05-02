@@ -5,12 +5,14 @@ class Productinf {
     private var proinf: String = ""
     private var maninf: String = ""
     private var coninf: String = ""
+    private var imgurl: String = ""
 
-    constructor(expdt: String, proinf: String, maninf: String, coninf: String) {
+    constructor(expdt: String, proinf: String, maninf: String, coninf: String, imgurl: String) {
         this.expdt = expdt
         this.proinf = proinf
         this.maninf = maninf
         this.coninf = coninf
+        this.imgurl = imgurl
     }
 
     constructor()
@@ -38,5 +40,11 @@ class Productinf {
     }
     fun setConinf(coninf: String){
         this.coninf = coninf
+    }
+    fun setImgurl():String?{
+        return imgurl
+    }
+    fun getImgurl(imgurl: String){
+        this.imgurl = imgurl
     }
 }
